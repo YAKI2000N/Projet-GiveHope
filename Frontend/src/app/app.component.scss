@@ -1,0 +1,107 @@
+nav li {
+  justify-content: space-between;
+  justify-items: flex-end;
+  margin: 0 20px 0 20px;
+}
+a {
+  cursor: pointer;
+}
+#navbar.bg-scroll {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+nav img{
+height: 70px;
+width: 70px;
+margin: 0  0 0 20px ;
+justify-content: center;
+}
+
+.navbar {
+  background-color: white;
+  display:flex;
+  padding: 1px;
+}
+nav div{
+  justify-content: space-evenly;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  color: pink;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  background-color: #DEAEAE;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav i {
+  margin-right: 10px;
+}
+
+
+
+nav li {
+  justify-content: space-between;
+  justify-items: flex-end;
+  margin: 0 20px 0 20px;
+}
+nav img{
+height: 70px;
+width: 70px;
+margin: 0  0 0 20px ;
+justify-content: center;
+}
+
+.navbar {
+  background-color: white;
+  display:flex;
+  padding: 1px;
+}
+nav div{
+  justify-content: space-evenly;
+}
+
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  background-color: hsl(345, 27%, 62%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav i {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #000000;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}

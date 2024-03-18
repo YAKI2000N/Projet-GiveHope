@@ -1,0 +1,40 @@
+body {
+	background-color: #f5f7fa;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #b1969f, hsl(345, 27%, 62%)) !important;
+}
+.btn-custom {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    width: 12rem;
+  }
+  
+  .btn-custom:hover {
+    background-color: black;
+    color: white;
+  }
+  
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+body {
+	background-color: #f5f7fa;
+}
+.custom-btn {
+    background-color: hsl(336, 31%, 76%) ;
+    color: #000000;
+  }

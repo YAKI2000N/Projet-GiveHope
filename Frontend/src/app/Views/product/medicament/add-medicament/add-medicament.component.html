@@ -1,0 +1,108 @@
+
+<!--
+    <div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <form [formGroup]="medicamentForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" formControlName="name" required >
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1"> Price </label>
+                <input type="text" class="form-control" formControlName="price" required >
+              </div>
+              
+              
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">description</label>
+                <textarea class="form-control" rows="3" formControlName="description" ></textarea>
+              </div> 
+              <button type="submit" class="btn btn-outline-primary">Submit</button>
+
+
+          </form>
+
+
+
+</div>
+</div>
+-->
+
+
+
+<section class="background-radial-gradient overflow-hidden" >
+    
+  <div class="container py-5 h-100">
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+      </div>  
+
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="card-wrapper">
+          <div class="card bg-glass" style="border-radius: 2rem;">
+              <div class="card1" style="width: 28rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Post Announcement</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">“There is no exercise better for the heart than reaching down and lifting people up.”</h6>
+                      <p>Kindly, we inform you that you must enter your contact details and describe your post.</p>
+                  </div>
+                   
+              </div>
+             <form [formGroup]="eventForm" (ngSubmit)="onSubmit()" class="was-validated">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1">Name</label>
+                    
+                    <input type="text" class="form-control" formControlName="name" required>
+             
+                    <div class="invalid-feedback">
+                      Please enter your last name in the label.
+                    </div>
+
+
+                    
+                    
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" rows="3" formControlName="description" ></textarea>
+                  </div> 
+
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1"> Price </label>
+                    <input type="text" class="form-control" formControlName="price" required >
+                  </div> 
+
+                  
+                  
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1">Photo</label>
+                    <input type="file"  (change)="imageChange($event)" class="form-control" required>
+                    <div class="invalid-feedback">Please select a photo.</div>
+                  </div>
+                  <div class="mb-3">
+
+                   
+                   
+                  </div>
+               
+                  
+                 
+
+              <div class="mb-3 ">
+                <button type="submit" class="btn ">Submit</button>
+                </div>
+             
+
+                  
+                </form>
+                
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+</section>

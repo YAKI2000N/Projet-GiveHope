@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+  <img src="/assets/logo.png" alt="">   
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+      
+      
+          <ul class="navbar-nav">
+              <li><form action="/search">
+                  <input type="text" placeholder="Search..." name="search">
+                  <button type="submit">Submit</button>
+                </form></li>
+          
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/how_it_works">How It Works</a>
+           
+           
+          
+          <li class="nav-item active">
+            <a class="nav-link"  routerLink="/home">Home <span class="sr-only"></span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" (click)="toAbout()" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toProduct()" routerLinkActive="active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toContact()" routerLinkActive="active" >Contact Us</a>
+          </li>
+      <li><a *ngIf="!isLoggedIn" routerLink="/login" id="login"> <i class="fa fa-sign-in"></i>Login</a></li>
+      <li><a *ngIf="!isLoggedIn" routerLink="/sign_up" id="signup"> <i class="fa fa-user-plus"></i> Sign Up</a></li>
+      <li class="nav-item dropdown" *ngIf="isLoggedIn">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          My Account
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="/profile">Profile</a></li>
+          <li><a class="dropdown-item" (click)="logout()" href="#">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- footer -->
+
+<router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+<section class="background-radial-gradient">
+  <br>
+  <h1 class="mb-5 text-center"><strong>MEDICAMENTS</strong></h1>
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-md-12 mb-4" *ngFor="let product of products">
+          <div class="card">
+            <img [src]="product.image" alt="{{ product.name }}" class="card-img-top" width="200" height="300">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">{{ product.shortDescription }}</p>
+              <button class="btn" (click)="toggleDescription(product)">see more</button>
+              <p class="card-text mt-3" *ngIf="product.showDescription">{{ product.longDescription }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  
+  `
+  

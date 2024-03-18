@@ -1,0 +1,258 @@
+
+<!--<section class="background-radial-gradient overflow-hidden">
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(336, 26%, 37%)">
+          why subscribe in our <br />
+          <span style="color: hsl(342, 50%, 23%)"> GIVEHOPE SITE</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(350, 39%, 21%)">
+          There are many people who have lost their lives due to poverty and the lack of resources, and there are countless others who
+           are struggling to get by and need the smallest of help. Providing aid to the poor not only improves their quality of life but
+           also helps to create a more equal and just society.
+           The importance of helping the poor cannot be overstated. Whether it is through providing aid, volunteering, or advocating for change,
+            we all have a role to play in making the world a better place for those in need.
+        </p>
+       
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form>
+              
+                  <div class="form-outline">
+                    <input type="text" formControlName="name" class="form-control" placeholder="Enter Name"  [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors }"  />
+                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">              <label class="form-label" for="form3Example1">First name</label>
+                      <div *ngIf="f['name'].errors['matching']"> Name is required </div>
+                    </div>
+
+      
+
+                  </div>
+               
+              
+
+              <div class="form-outline mb-4">
+                <input type="email" formControlName="email"  name="email" class="form-control" placeholder="Enter Email"  />
+                <label class="form-label" for="form3Example3">Email address</label>
+               
+               
+
+                  <div *ngIf="f['email'].getError('required')"> Email is required </div>
+                  <div *ngIf="f['email'].getError('email')"> Email must be a valid email address </div>
+            
+                </div>
+                   
+               
+                
+
+                
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">Password</label>
+                <input type="password" formControlName="password" name="password" class="form-control"  placeholder=" Password" >
+
+
+
+                <div *ngIf="f['password'].getError('required')"> Password is required </div>
+                <div *ngIf="f['password'].getError('minlength')"> Password must be atleast 6 characters </div>
+
+
+                </div>
+                
+             
+
+
+
+                 
+              
+
+
+
+                 
+              <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input 
+                    formControlName="confirm_password"
+                    id="confirm_password" 
+                    type="password" 
+                    class="form-control">
+                    <div *ngIf="f['confirm_password'].getError('required')!=null">Password is required.</div>
+                    <div *ngIf="f['confirm_password'].getError('confirmedValidator')!=null">Password and Confirm Password must be match.</div>
+                </div>
+
+             
+  
+
+
+
+              
+                
+              <button type="submit" class="btn btn-custom mb-4" style="background-color: hsl(336, 31%, 76%)">
+                Sign up
+              </button>
+
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                
+
+                <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+*/
+
+-->
+
+
+<section class="background-radial-gradient overflow-hidden" >
+  <div class="container px-8 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(336, 26%, 37%)">
+          why subscribe in our <br />
+          <span style="color: hsl(342, 50%, 23%)"> GIVEHOPE SITE</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(350, 39%, 21%)">
+          There are many people who have lost their lives due to poverty and the lack of resources, and there are countless others who
+           are struggling to get by and need the smallest of help. Providing aid to the poor not only improves their quality of life but
+           also helps to create a more equal and just society.
+           The importance of helping the poor cannot be overstated. Whether it is through providing aid, volunteering, or advocating for change,
+            we all have a role to play in making the world a better place for those in need.
+        </p>
+       
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+
+<div class="register-form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+      />
+      <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+        <div *ngIf="f['name'].errors['required']">Name is required</div>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Email</label>
+      <input
+        type="text"
+        formControlName="email"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+      />
+      <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+        <div *ngIf="f['email'].errors['required']">Email is required</div>
+        <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+      />
+      <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+        <div *ngIf="f['password'].errors['required']">Password is required</div>
+        <div *ngIf="f['password'].errors['minlength']">
+          Password must be at least 6 characters
+        </div>
+        <div *ngIf="f['password'].errors['maxlength']">
+          Username must not exceed 40 characters
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input
+        type="password"
+        formControlName="confirmPassword"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f['confirmPassword'].errors }"
+      />
+      <div
+        *ngIf="submitted && f['confirmPassword'].errors"
+        class="invalid-feedback"
+      >
+        <div *ngIf="f['confirmPassword'].errors['required']">
+          Confirm Password is required
+        </div>
+        <div *ngIf="f['confirmPassword'].errors['matching']">
+          Confirm Password does not match
+        </div>
+      </div>
+    </div>
+    <div class="form-group" style="margin-top: 10px;">
+      <button type="submit" class="btn btn-link btn-floating custom-btn mx-1">Register</button>
+      <button
+        type="button"(click)="onReset()"class="btn btn-link btn-floating custom-btn mx-1">
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+<div class="text-center">
+  <p>or sign up with:</p>
+  <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+    <i class="fab fa-facebook-f"></i>
+  </button>
+
+  <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+    <i class="fab fa-google"></i>
+  </button>
+
+  <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+    <i class="fab fa-twitter"></i>
+  </button>
+  
+
+  <button type="button" class="btn btn-link btn-floating custom-btn mx-1">
+    <i class="fab fa-github"></i>
+  </button>
+</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

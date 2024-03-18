@@ -1,0 +1,63 @@
+<section class="background-radial-gradient overflow-hidden">
+    
+    <div class="container py-5 h-100">
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+        </div>  
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="card-wrapper">
+            <div class="card bg-glass" style="border-radius: 2rem;">
+                <div class="card1" style="width: 28rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Post Request</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">never lose infinite hope!</h6>
+                      <p class="card-text">Kindly, we inform you that you must enter your contact details and describe your request and you must upload your doctor prescription.</p>
+                    </div>
+                </div>
+                <form class="was-validated">
+                      <!-- name labels -->
+                    <div class="mb-3">
+                      <label for="NAME1" class="form-label"></label>
+                      <input type="text" class="form-control" id="NAME1" placeholder="a name is required" required>
+               
+                      <div class="invalid-feedback">
+                        Please enter your last name in the label.
+                      </div>
+                      <label for="NAME2" class="form-label"></label>
+                      <input type="text" class="form-control" id="NAME2" placeholder="a name is required" required>
+               
+                      <div class="invalid-feedback">
+                        Please enter your first name in the label.
+                      </div>
+                    </div>
+                    <!-- select Request-->
+                    <div class="mb-3">
+                      <select class="form-select" required aria-label="select example">
+                        <option value="">Select your Request type</option>
+                        <option value="1">Medicament Request</option>
+                        <option value="2">Medical_Supplies Request</option>
+                      </select>
+                      <label for="validationTextarea" class="form-label"></label>
+                      <textarea class="form-control" id="validationTextarea" placeholder="Required a Request description" required></textarea>
+                      <div class="invalid-feedback">
+                        Please enter a Request in the textarea.
+                      </div>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <input type="file" class="form-control" aria-label="file example" required>
+                      <div class="invalid-feedback">invalid prescreption file</div>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <button class="btn custom-btn" type="submit" style ="border-radius: 0.8rem;"disabled>Submit</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</section>

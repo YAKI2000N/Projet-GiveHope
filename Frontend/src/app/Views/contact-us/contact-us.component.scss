@@ -1,0 +1,140 @@
+.column1{
+  background-color: #F5ECEC;
+  width: 23%;
+  height: 175px;
+  border-radius: 7%;
+  display: inline-block;
+  border: 10px double #F5ECEC;
+ 
+  /*flex-basis: 25%;*/
+flex-basis: calc(50% - 10px);
+margin-left: 105px;
+margin-bottom: 16px;
+ 
+}
+.container1{
+  text-align: center;
+}
+.row1{
+  white-space: nowrap;
+  background-color:#F5ECEC;
+}
+
+.social-icons {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.container1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+
+}
+#ab{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:x-large;
+}
+.col{
+  background-color: #F5ECEC;
+  ;
+  width: 23%;
+  height: 175px;
+  border-radius: 5%;
+  display: inline-block;
+  flex-basis: calc(50% - 10px);
+margin-left: 250px;
+margin-bottom: 16px;
+}
+
+
+
+footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color:#F5ECEC;
+  flex-shrink: 0;
+}
+
+
+.fa-facebook-official {
+  color: #3b5998;
+}
+
+.fa-linkedin-square {
+  color: #0077B5;
+}
+
+.fa-instagram {
+  color: #E1306C;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+li i.fa-facebook-official {
+  margin-right: 10px;
+}
+
+li a {
+  margin-left: 10px;
+}  
+li i.fa-instagram {
+  margin-right: 10px;
+}
+
+li a {
+  margin-left: 10px;
+}  
+.social-icons li a i.fa-linkedin-square {
+  margin-right: 10px;
+}
+li a {
+  margin-left: 10px;
+}  
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social-icons li a i {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.social-text {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.contact-info li .fa {
+  margin-right: 10px;
+  color: #333;
+}
+
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info li a:hover {
+  text-decoration: underline;
+}

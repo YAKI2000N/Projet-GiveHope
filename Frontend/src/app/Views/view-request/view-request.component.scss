@@ -1,0 +1,35 @@
+.background-radial-gradient {
+    background-color:aqua
+  }
+  .my-table {
+    width: 80%;
+    margin-left: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.471);
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+  }
+  
+  .my-table th,
+  .my-table td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  .my-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .my-table td {
+    background-color: #ffffff;
+    color: #333333;
+    border-bottom: 1px solid #ddd;
+  }

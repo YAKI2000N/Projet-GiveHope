@@ -1,0 +1,71 @@
+<main class="mt-5">
+  <section>
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Give Hope .. Create Impact</h1>
+                <h5 class="mb-4">It's important to remember that we all have the power to make a difference, no matter how small or large our contributions may be.</h5>
+
+                  <a class="btn btn-outline-light btn-block btn-lg m-2" (click)="openModal1()"> Post Request <span class="sr-only"></span></a>
+                  <a class="btn btn-outline-light btn-block btn-lg m-2"routerLink="../view_Request"> View Request <span class="sr-only"></span></a>
+
+                  <a class="btn btn-outline-light btn-block btn-lg m-2" (click)="openModal()"> Post Announcement <span class="sr-only"></span></a>
+                  <a class="btn btn-outline-light btn-block btn-lg m-2"routerLink="../medicament-list"> View Announcement <span class="sr-only"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </section>
+</main>
+<!--Creation du Popup Post Request-->
+<div class="modal fade modal-xl" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" >
+    <div class="modal-content">
+      <div class="modal-body">
+       <app-post-request></app-post-request>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" style= "background-color: hsl(341, 18%, 45%); color: rgb(246, 246, 246);"(click)="hideModal1()" data-bs-toggle="modal">Back to Home</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--création du popup post Announcement-->
+<div class="modal fade modal-xl" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+       <app-add-medicament></app-add-medicament>
+      </div>
+      <div class="modal-footer">
+        <button class="btn " style= "background-color: hsl(341, 18%, 45%); color: rgb(246, 246, 246);" (click)="hideModal()" data-bs-toggle="modal">Back to Home</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5" />
+<section id="about-us">
+<app-about-us></app-about-us>
+</section>
+ <hr class="my-5" />
+ <section id="products">
+  <app-product></app-product>
+ </section>
+<hr class="my-5" />
+  <section id="contact-us">
+    <app-contact-us></app-contact-us>
+  </section>
+
+
+
+

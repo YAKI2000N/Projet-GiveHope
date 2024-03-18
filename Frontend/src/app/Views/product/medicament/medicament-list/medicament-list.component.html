@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="d-flex justify-content-between flex-wrap flex-mdnwrap align items-center pt-3 pb-2 mb-3 border-bottom">
+      <h2 class="">Medicament List</h2>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let Medicament of Medicaments; let i = index">
+              <th scope="row">{{ Medicament.id }}</th>
+              <td>
+                  <img  [src]="imageSrc" *ngIf="imageLoaded" >
+                  <div *ngIf="!imageLoaded">Loading image...</div>
+
+                  {{ Medicament.name }}
+              </td>
+              <td>{{ Medicament.price }}</td>
+              <td>{{ Medicament.description }}</td>
+              <td>
+                  <button type="button" class="btn" routerLink="/edit-medicament/{{ Medicament.id }}">Edit</button>&nbsp;
+                  
+                  <button type="button" class="btn " (click)="delete(Medicament.id, i)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        
+  </div>
+</div>
+<img  [src]="imageSrc" *ngIf="imageLoaded" >
+                  

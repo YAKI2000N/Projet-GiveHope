@@ -1,0 +1,111 @@
+
+.product {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Style for the "Medical Supplies" and "Medicaments" cards */
+.card {
+  position: relative;
+  height: 23rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  width: 35rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+
+}
+
+.card:hover .card-img {
+  transform: scale(1.2);
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+/* Style pour les boutons "Medical Supplies" et "Medicaments" */
+.btn-outline-light {
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  background-color: transparent;
+  color: white;
+  box-shadow: inset 0 0 0 2px hiwhte;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #fff;
+  cursor: pointer;
+}
+/* Style pour les liens de la page */
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #6c757d;}
+
+  .products-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+  }
+ 
+  .products-title:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+  }
+ 
+  .products-title:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: black;
+    z-index: -1;
+  }

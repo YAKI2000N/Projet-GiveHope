@@ -1,0 +1,100 @@
+.about-us {
+    margin-top: 50px;
+   
+    font-size: 36px;
+    text-align: center;
+ 
+  }
+ 
+ 
+/* Main section */
+.dd{
+
+    background-color:  #F5ECEC;;
+}
+.main {
+   
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+ 
+  /* Service section */
+  .service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+   
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #e876bc;
+    transition: transform 0.8s;
+  }
+ 
+  .service h4 {
+    height: 35px;
+    width: 80%;
+    background-color: #fff;
+    margin: 50px auto;
+    position: relative;
+  }
+ 
+  .service h4::before,
+  .service h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+  }
+ 
+  .service h4::before {
+    background: linear-gradient(to right, #DCBCBC, #fff);
+    left: -5px;
+    bottom: -5px;
+  }
+ 
+  .service h4::after {
+    background: linear-gradient(to right, #fff, #DCBCBC);
+    right: -5px;
+    top: -5px;
+  }
+ 
+  /* Shadow sections */
+  .shadowOne,
+  .shadowTwo {
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.8s;
+  }
+ 
+  .shadowOne {
+    width: 80%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #e876bc;
+  }
+ 
+  .shadowTwo {
+    width: 64%;
+    z-index: -2;
+  }
+ 
+  /* Hover states */
+  .main:hover .service {
+    transform: translateY(-50px);
+  }
+ 
+  .main:hover .shadowOne {
+    transform: translateY(-25px);
+  }
